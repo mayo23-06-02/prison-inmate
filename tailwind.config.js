@@ -1,0 +1,86 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./app/**/*.{js,jsx,ts,tsx}"],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: "#f0f9f0",
+          100: "#dcf2dc",
+          200: "#b9e5b9",
+          300: "#8ad08a",
+          400: "#5bb85b",
+          500: "#008400", // Brand primary
+          600: "#006600",
+          700: "#005500",
+          800: "#004400",
+          900: "#003300",
+        },
+        secondary: {
+          blue: "#1E40AF",
+          orange: "#F97316",
+          red: "#DC2626",
+          green: "#4CAF50",
+        },
+        gray: {
+          50: "#F9FAFB",
+          100: "#F3F4F6",
+          200: "#E5E7EB",
+          300: "#D1D5DB",
+          400: "#9CA3AF",
+          500: "#6B7280",
+          600: "#4B5563",
+          700: "#374151",
+          800: "#1F2937",
+          900: "#111827",
+        },
+      },
+      borderRadius: {
+        none: "0px",
+        sm: "4px",
+        md: "6px",
+        lg: "8px", // Default for cards, buttons
+        xl: "12px",
+        "2xl": "16px",
+        full: "9999px",
+      },
+      spacing: {
+        1: "4px",
+        2: "8px",
+        3: "12px",
+        4: "16px",
+        5: "20px",
+        6: "24px",
+        7: "28px",
+        8: "32px",
+        9: "36px",
+        10: "40px",
+      },
+      fontSize: {
+        "display-lg": ["32px", { lineHeight: "38px", fontWeight: "800" }],
+        "display-md": ["24px", { lineHeight: "30px", fontWeight: "700" }],
+        "heading-lg": ["20px", { lineHeight: "28px", fontWeight: "700" }],
+        "heading-md": ["18px", { lineHeight: "26px", fontWeight: "600" }],
+        "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+        "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+        "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }],
+        caption: ["12px", { lineHeight: "16px", fontWeight: "400" }],
+        button: ["16px", { lineHeight: "24px", fontWeight: "600" }],
+        label: ["14px", { lineHeight: "20px", fontWeight: "500" }],
+      },
+      fontFamily: {
+        sans: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
+      },
+    },
+  },
+  plugins: [],
+};
